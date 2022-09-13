@@ -76,7 +76,7 @@ Now, let's test it with the `TestClient`:
 
 === "Code"
 
-    ```py linenums="1" hl_lines="7" title="test.py"
+    ```py linenums="1" hl_lines="9" title="test.py"
     from fastapi.testclient import TestClient
 
     from main import app
@@ -109,7 +109,7 @@ On the other hand, if we run the following test, we'll get a different result:
 
 === "Code"
 
-    ```py linenums="1" hl_lines="7" title="test.py"
+    ```py linenums="1" hl_lines="9" title="test.py"
     from fastapi.testclient import TestClient
 
     from main import app
@@ -157,6 +157,18 @@ Let's see the changes you should be aware:
 4. `content_type` will default to "text/plain" when sending file instead of empty string.
 5. The HTTP methods *DELETE*, *GET*, *HEAD* and *OPTIONS* will not accept `content`, `data`, `json` and `files` parameters.
 6. `data` parameter doesn't accept list of tuples, instead it should be a dictionary.
+
+    === "❌ List of Tuples"
+
+        ```python
+        client.post(..., data=[("key1", "1"), ("key1", "2"), ("key2", "3")])
+        ```
+
+    === "✅ Dictionary"
+
+        ```python
+        client.post(..., data={"key1": ["1", "2"], "key2": "3"})
+        ```
 
 Those changes will likely impact your test suite. Having this in mind, I've created a [*codemod*](https://libcst.readthedocs.io/en/latest/codemods_tutorial.html) that will help you to migrate your tests: [**bump-testclient**](https://github.com/Kludex/bump-testclient). :tada:
 
