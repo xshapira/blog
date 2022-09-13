@@ -2,6 +2,7 @@ site_name: Marcelo Trylesinski
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: images/favicon.ico
   logo: images/favicon.ico
   features:
