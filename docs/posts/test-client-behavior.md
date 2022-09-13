@@ -1,12 +1,11 @@
 ---
-draft: true
-date: 2022-09-12
+date: 2022-09-13
 categories:
 - Testing
 links:
   - Starlette's TestClient: https://www.starlette.io/testclient/
   - FastAPI Testing Tutorial: https://fastapi.tiangolo.com/tutorial/testing/
-readtime: 4
+readtime: 5
 ---
 
 # FastAPI's Test Client
