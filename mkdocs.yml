@@ -11,16 +11,18 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: slate
+      primary: deep orange
       toggle:
-        icon: material/brightness-7
+        icon: material/lightbulb
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: default
+      primary: deep orange
       toggle:
-        icon: material/brightness-4
+        icon: material/lightbulb-outline
         name: Switch to system preference
 
 plugins:
