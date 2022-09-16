@@ -1,7 +1,12 @@
 site_name: Marcelo Trylesinski
+site_description: Marcelo Trylesinski's blog
+site_url: https://kludex.github.io
+site_author: Marcelo Trylesinski
+copyright: Copyright &copy; 2022 Marcelo Trylesinski
 
 theme:
   name: material
+  locale: en
   custom_dir: overrides
   favicon: images/favicon.ico
   logo: images/favicon.ico
@@ -31,6 +36,14 @@ plugins:
   - tags
   - blog:
       blog_dir: .
+  - rss:
+      match_path: blog/posts/.*
+      comments_path: "#__comments"
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
 
 markdown_extensions:
   - attr_list
@@ -66,5 +79,3 @@ extra:
   analytics:
     provider: google
     property: G-KG3LCD6FSH
-
-copyright: Copyright &copy; 2022 Marcelo Trylesinski
