@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://kludex.github.io/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kludex.github.io/2022/09/20/fastapi-escape-character/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kludex.github.io/2022/09/13/fastapis-test-client/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kludex.github.io/archive/2022/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kludex.github.io/category/fastapi/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kludex.github.io/category/testing/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
